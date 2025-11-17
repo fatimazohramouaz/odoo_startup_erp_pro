@@ -1,0 +1,18 @@
+<odoo>
+  <record id="view_create_invoice_wizard_form" model="ir.ui.view">
+    <field name="name">startup.create.invoice.wizard.form</field>
+    <field name="model">startup.create.invoice.wizard</field>
+    <field name="arch" type="xml">
+      <form string="Create Invoice from Project">
+        <group>
+          <field name="project_id"/>
+          <field name="create_and_open"/>
+        </group>
+        <footer>
+          <button string="Create" type="object" name="action_create_invoice" class="oe_highlight"/>
+          <button string="Cancel" special="cancel"/>
+        </footer>
+      </form>
+    </field>
+  </record>
+</odoo>

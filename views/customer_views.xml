@@ -1,0 +1,36 @@
+<odoo>
+  <record id="view_startup_customer_tree" model="ir.ui.view">
+    <field name="name">startup.customer.tree</field>
+    <field name="model">startup.customer</field>
+    <field name="arch" type="xml">
+      <tree>
+        <field name="name"/>
+        <field name="company_name"/>
+        <field name="email"/>
+        <field name="projects_count"/>
+      </tree>
+    </field>
+  </record>
+
+  <record id="view_startup_customer_form" model="ir.ui.view">
+    <field name="name">startup.customer.form</field>
+    <field name="model">startup.customer</field>
+    <field name="arch" type="xml">
+      <form string="Customer">
+        <sheet>
+          <group>
+            <field name="name"/>
+            <field name="company_name"/>
+            <field name="email"/>
+            <field name="phone"/>
+            <field name="partner_id"/>
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+  <menuitem id="menu_startup_root" name="Startup ERP PRO"/>
+  <menuitem id="menu_startup_customer" name="Customers" parent="menu_startup_root"/>
+  <act_window id="action_startup_customers" name="Customers" res_model="startup.customer" view_mode="tree,form"/>
+</odoo>

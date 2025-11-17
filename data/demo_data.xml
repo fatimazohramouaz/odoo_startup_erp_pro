@@ -1,0 +1,7 @@
+<odoo>
+  <record id="demo_customer_acme" model="startup.customer">
+    <field name="name">ACME Corp</field>
+    <field name="email">contact@acme.example</field>
+    <field name="company_name">ACME</field>
+  </record>
+</odoo>

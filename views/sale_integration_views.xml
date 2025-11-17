@@ -1,0 +1,13 @@
+<odoo>
+  <record id="action_startup_create_project_from_sale" model="ir.actions.server">
+    <field name="name">Create Project from Sale</field>
+    <field name="model_id" ref="sale.model_sale_order"/>
+    <field name="state">code</field>
+    <field name="code">env['startup.sale.integration'].create_project_from_sale(record)</field>
+  </record>
+  <record id="sale_action_bind" model="ir.actions.act_window">
+    <field name="name">Startup Sale Helpers</field>
+    <field name="res_model">startup.sale.integration</field>
+    <field name="view_mode">tree,form</field>
+  </record>
+</odoo>

@@ -1,0 +1,5 @@
+<odoo>
+  <record id="group_startup_user" model="res.groups">
+    <field name="name">Startup User</field>
+  </record>
+</odoo>

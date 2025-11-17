@@ -1,0 +1,4 @@
+<odoo>
+  <!-- Simple dashboard menu placeholder. You can expand with kanban/charts. -->
+  <menuitem id="menu_startup_dashboard" name="Dashboard" parent="menu_startup_root" sequence="5"/>
+</odoo>

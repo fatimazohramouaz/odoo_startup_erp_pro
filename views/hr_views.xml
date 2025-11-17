@@ -1,0 +1,15 @@
+<odoo>
+  <record id="view_hr_employee_inherit" model="ir.ui.view">
+    <field name="name">hr.employee.startup.inherit.form</field>
+    <field name="model">hr.employee</field>
+    <field name="inherit_id" ref="hr.view_employee_form"/>
+    <field name="arch" type="xml">
+      <xpath expr="//sheet/notebook/page[1]" position="inside">
+        <group>
+          <field name="is_startup_dev"/>
+          <field name="github_username"/>
+        </group>
+      </xpath>
+    </field>
+  </record>
+</odoo>

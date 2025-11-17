@@ -1,0 +1,4 @@
+<odoo>
+  <!-- Example cron to remind unpaid invoices (placeholder) -->
+  <!-- You can implement actual logic via automated actions or scheduled actions -->
+</odoo>
