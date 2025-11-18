@@ -44,24 +44,51 @@ A comprehensive system for managing a startup using Odoo ERP, focused on develop
 
 ## 📁 هيكل المشروع | Project Structure
 
-Smart_ERP_Solutions/  
-├── apps/  
-│   ├── custom_app.py  
-│   └── web_pages.py  
-├── views/  
-│   ├── app_views.xml  
-│   └── website_views.xml  
-├── static/  
-│   ├── css/  
-│   │   └── custom_styles.css  
-│   └── js/  
-│       └── interactions.js  
-├── security/  
-│   └── ir.model.access.csv  
-├── controllers/  
-│   └── api_controller.py  
-└── manifest.py
+odoo_startup_erp_pro/
+├── data/
+│   ├── cron_data.xml
+│   └── demo_data.xml
 
+├── views/
+│   ├── customer_views.xml
+│   ├── dashboard_views.xml
+│   ├── hr_views.xml
+│   ├── project_views.xml
+│   ├── sale_integration_views.xml
+│   └── task_views.xml
+
+├── models/
+│   ├── pycache/
+│   │   ├── init.cpython-310.pyc
+│   │   ├── customer.cpython-310.pyc
+│   │   ├── hr_extension.cpython-310.pyc
+│   │   ├── project.cpython-310.pyc
+│   │   ├── sale_integration.cpython-310.pyc
+│   │   └── task.cpython-310.pyc
+│   ├── init.py
+│   ├── customer.py
+│   ├── hr_extension.py
+│   ├── project.py
+│   ├── sale_integration.py
+│   └── task.py
+
+├── report/
+│   └── project_report.xml
+
+├── security/
+│   ├── security.xml
+│   └── ir.model.access.csv   ← (صحّحتها، بصح تكون CSV مش XLSX)
+
+├── wizard/
+│   ├── pycache/
+│   │   ├── init.cpython-310.pyc
+│   │   └── create_invoice_wizard.cpython-310.pyc
+│   ├── init.py
+│   ├── create_invoice_wizard.py
+│   └── create_invoice_wizard_views.xml
+
+├── init.py
+└── manifest.py
 ---
 
 ## 🚀 خطوات التثبيت | Installation Steps
@@ -98,7 +125,7 @@ Smart_ERP_Solutions/
 
 ## 🧠 المطورون | Developers
 
-ihtida limam,fatma zohra mouaz,Bouchra hizi,Rim kadri,Remoune imane,jihad ,  
+ihtida limam,fatma zohra mouaz,Bouchra hizi,Rim kadri,Remoune imane,Djihad draem,Zineddine kedidi.  
 
 
 ---
